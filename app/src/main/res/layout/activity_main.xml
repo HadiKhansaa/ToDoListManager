@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:background="#DD00FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:id="@+id/username"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:layout_margin="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center"
+        android:id="@+id/password"
+        android:layout_weight="2"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:id="@+id/signIn"
+        android:text="sign in"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textSize="20sp"
+            android:text="Don't have an account?"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:backgroundTint="#DD00FF"
+            android:textColor="#0000FF"
+            android:id="@+id/signUp"
+            android:textAllCaps="false"
+            android:text="Register"/>
+    </LinearLayout>
+</LinearLayout>

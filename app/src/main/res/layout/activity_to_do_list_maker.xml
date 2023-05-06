@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDoListMaker"
+    android:orientation="vertical"
+    android:background="#DD00FF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make your list"
+        android:layout_weight="10"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNote"
+        android:layout_weight="50"
+        android:hint="type here"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:backgroundTint="#FF0000"
+            android:id="@+id/cancelButton"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:id="@+id/addButton"
+            android:backgroundTint="#1D710B"
+            app:icon="?android:attr/textCheckMark"
+            app:iconTint="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
